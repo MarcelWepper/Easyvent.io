@@ -1,13 +1,9 @@
 import React from 'react';
 import LazyHero from 'react-lazy-hero';
-import { Container, Row, Col, Jumbotron, Card, CardImg, CardText, CardBody,
-  CardTitle } from 'reactstrap';
 import CookieConsent from "react-cookie-consent";
-import Fade from 'react-reveal/Fade';
 import {Helmet} from "react-helmet";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from 'react-responsive-carousel';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Home.css';
@@ -25,7 +21,7 @@ export default class Home extends React.Component {
 			<div>
 
 				{/* Hero-Image */}
-				<LazyHero color = "#000000" parallaxOffset="100" minHeight='100vh' opacity ="0.5" imageSrc={Weppes} />
+				<LazyHero color = "#000000" parallaxOffset="50" minHeight='100vh' opacity ="0.5" imageSrc={Weppes}/>
 
 
 				{/*	Hier wird der Cookie und deren Parameter bestimmt	*/}
