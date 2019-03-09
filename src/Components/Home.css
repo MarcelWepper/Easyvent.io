@@ -1,0 +1,161 @@
+.background{
+  background-color:rgba(94, 92, 91 , 0.4);
+
+}
+
+.grid{
+	text-align: center;
+	border-radius: 20px;
+
+}
+.HomeText{
+  padding-top: 1%;
+  padding-bottom: 1%;
+  text-align: center;
+
+}
+
+.Cards{
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+
+}
+
+.CustCarousel{
+  padding-top: 2.5%;
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-bottom: 5%;
+  height: 10%;
+  background-color: #212121;
+  text-align:right;
+
+}
+
+.Sup1{
+  color: white;
+  background: #424242;
+
+}
+.Sup2{
+  color: white;
+  background: #757575;
+}
+
+.CardText{
+  text-align: center;
+  font-size: 24px;
+  border-radius: 10px;
+
+}
+.CardBlock{
+  text-align: block;
+  padding: 10%;
+  font-size: 125%;
+
+}
+.CardsFull{
+  padding-left: 0%;
+  padding-right: 0%;
+  margin-right: 0%;
+}
+
+
+.CardTitle{
+
+
+}
+
+.HeroText{
+	color: white;
+	opacity: 1;
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+}
+
+.KontaktText{
+  padding-left: 5%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  padding-right: 1%;
+
+}
+
+
+.Picture{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 240px;
+  height: 240px;
+
+}
+
+.SocialLinks {
+	color: white;
+	font-size: 5em;
+  display: flex;
+  text-align: center;
+	margin: auto;
+
+}
+
+.NavLink{
+  color: white !important;
+
+}
+.SnapWidget{
+  width: 100%;
+
+}
+
+
+.Philosophie{
+  padding-top: 1.5%;
+  padding-bottom: 2.5%;
+
+}
+.H1-Titel{
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+
+}
+
+.Jumbotron{
+  text-align:center;
+  margin-bottom: 0%;
+  background-color: #115115115;
+
+}
+
+
+
+.Bild{
+  padding-bottom: 2%;
+  padding-top: 1%;
+  border-radius: 20px;
+
+}
+
+.Platzhalter{
+  opacity: 0;
+  padding: 1%;
+
+}
+
+.Info{
+  background-color: lightgrey;
+}
+
+.Footer{
+  font-size: 20px;
+  color:white;
+  padding-top: 3%;
+  padding-bottom: 2%;
+  background-color: #373737;
+
+}
