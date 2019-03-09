@@ -21,7 +21,7 @@ export default class Contact extends React.Component {
 				<br></br>
 
 								<h2> Kontakt </h2>
-								<p>	MarcelWepper(at)gmail.com </p>
+								<p>	e.friedle@flair-software.de </p>
 
 								<h2>	 Streitschlichtung </h2>
 								<p>	Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: https://ec.europa.eu/consumers/odr </p>
