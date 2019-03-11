@@ -35,7 +35,7 @@ class Header extends React.Component {
             {!this.state.isWideEnough && <MDBNavbarToggler onClick={this.onClick} />}
             <MDBCollapse isOpen={this.state.collapse} navbar>
               <MDBNavbarBrand href="/">
-                <strong>Digivent</strong>
+                <strong>Easyvent.io</strong>
               </MDBNavbarBrand>
                 <MDBNavbarNav right>
                   <MDBNavItem>
