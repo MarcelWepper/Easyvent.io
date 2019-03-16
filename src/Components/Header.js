@@ -1,52 +1,39 @@
 import React from 'react';
 import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavbarToggler, MDBCollapse, MDBNavItem, MDBNavLink } from 'mdbreact';
-
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 import './Home.css'
+import Brand from'./Pics/brand.png';
 
 class Header extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      collapse: false,
-      isWideEnough: false
-    };
-    this.onClick = this.onClick.bind(this);
-  }
-  componentDidUpdate(){
-    if (this.state.collapse) {
-      this.setState({
-      collapse:false
-      });
 
-    }
-
-  }
-
-  onClick() {
-    this.setState({
-      collapse: !this.state.collapse
-    });
-  }
 
   render() {
     return (
       <div>
-            <MDBNavbar fixed="top" dark expand="md" scrolling transparent>
-            {!this.state.isWideEnough && <MDBNavbarToggler onClick={this.onClick} />}
-            <MDBCollapse isOpen={this.state.collapse} navbar>
-              <MDBNavbarBrand href="/">
-                <strong>Easyvent.io</strong>
-              </MDBNavbarBrand>
-                <MDBNavbarNav right>
-                  <MDBNavItem>
-                    <MDBNavLink to="/">Home</MDBNavLink>
-                  </MDBNavItem>
-                  <MDBNavItem>
-                    <MDBNavLink to="/contact">Kontakt</MDBNavLink>
-                  </MDBNavItem>
-                </MDBNavbarNav>
-              </MDBCollapse>
-            </MDBNavbar>
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark primary-color scrolling-navbar">
+          <a class="navbar-brand" href="/#">
+          <img src={Brand} height="30"/> easyvent.io
+          </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+            aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+  <div class="collapse navbar-collapse" id="basicExampleNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="/#hero">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/#team">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact">Kontakt</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
     );
   }
