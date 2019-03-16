@@ -6,7 +6,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import ScrollableAnchor from 'react-scrollable-anchor';
 import { Container, Row, Col, Jumbotron, Card, CardImg, CardText, CardBody,
   CardTitle } from 'reactstrap';
-import { MDBJumbotron, MDBContainer,MDBRow, MDBCol, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBIcon } from "mdbreact";
+import { Animation, MDBJumbotron, MDBContainer,MDBRow, MDBCol, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBIcon } from "mdbreact";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
@@ -55,7 +55,10 @@ export default class Home extends React.Component {
           <MDBJumbotron fluid >
             <MDBContainer color="elegant-color-dark">
 
+            <Animation type="fadeIn" duration="1s" delay="0.5s" reveal>
               <MDBRow>
+
+
                 <MDBCol size="12">
                   <h1 className="h1">Unser Team:</h1>
                 </MDBCol>
@@ -64,8 +67,7 @@ export default class Home extends React.Component {
               <MDBRow>
               <MDBCol size="md" sm ="12">
                 <MDBCard>
-                  <MDBCardImage top src={Christopher} overlay="white-slight"
-                    hover waves alt="MDBCard image cap" />
+                  <MDBCardImage top src={Christopher} waves="false" alt="MDBCard image cap" />
                   <MDBCardBody className="elegant-color white-text rounded-bottom">
                     <MDBCardTitle>Christopher Hilgert</MDBCardTitle>
                     <hr className="hr-light" />
@@ -79,8 +81,7 @@ export default class Home extends React.Component {
 
               <MDBCol size="md" sm ="12">
                 <MDBCard>
-                  <MDBCardImage top src={Emanuel} overlay="white-slight"
-                    hover waves alt="MDBCard image cap" />
+                  <MDBCardImage top src={Emanuel} waves="false" alt="MDBCard image cap" />
                   <MDBCardBody className="elegant-color white-text rounded-bottom">
                     <MDBCardTitle>Emanuel Friedle</MDBCardTitle>
                     <hr className="hr-light" />
@@ -94,8 +95,7 @@ export default class Home extends React.Component {
 
               <MDBCol size="md" sm ="12">
                 <MDBCard>
-                  <MDBCardImage top src={Florian} overlay="white-slight"
-                    hover waves alt="MDBCard image cap" />
+                  <MDBCardImage top src={Florian} waves="false" alt="MDBCard image cap" />
                   <MDBCardBody className="elegant-color white-text rounded-bottom">
                     <MDBCardTitle>Florian Bambach</MDBCardTitle>
                     <hr className="hr-light" />
@@ -109,8 +109,7 @@ export default class Home extends React.Component {
 
                 <MDBCol size="md" sm ="12">
                   <MDBCard>
-                    <MDBCardImage top src={Marvin} overlay="white-slight"
-                      hover waves alt="MDBCard image cap" />
+                    <MDBCardImage top src={Marvin} waves="false" alt="MDBCard image cap" />
                     <MDBCardBody className="elegant-color white-text rounded-bottom">
                       <MDBCardTitle>Marvin   Denk</MDBCardTitle>
                       <hr className="hr-light" />
@@ -124,8 +123,7 @@ export default class Home extends React.Component {
 
                 <MDBCol size="md" sm ="12">
                   <MDBCard>
-                    <MDBCardImage top src={Marcel} overlay="white-slight"
-                      hover waves alt="MDBCard image cap" />
+                    <MDBCardImage top src={Marcel} waves="false" alt="MDBCard image cap" />
                     <MDBCardBody className="elegant-color white-text rounded-bottom">
                       <MDBCardTitle>Marcel Wepper</MDBCardTitle>
                       <hr className="hr-light" />
@@ -138,6 +136,7 @@ export default class Home extends React.Component {
                 </MDBCol>
 
               </MDBRow>
+              </Animation>
             </MDBContainer>
           </MDBJumbotron>
         </ScrollableAnchor>
