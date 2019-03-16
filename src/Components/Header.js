@@ -34,9 +34,9 @@ class Header extends React.Component {
   render() {
     return (
       <div>
-        <MDBNavbar color="black" expand="md" fixed="top" scrolling transparent dark>
+        <MDBNavbar color="elegant-color-dark" expand="md" fixed="top" scrolling transparent dark>
         <MDBNavbarBrand href="/">
-          <img src={Brand} height="32px" width="32px" alt="" /><strong>easyvent.io</strong>
+          <img src={Brand} height="48px" width="48px" alt="" /><strong>easyvent.io</strong>
         </MDBNavbarBrand>
         {!this.state.isWideEnough && <MDBNavbarToggler onClick={this.onClick} />}
         <MDBCollapse isOpen={this.state.collapse} navbar>

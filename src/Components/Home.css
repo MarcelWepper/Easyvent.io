@@ -15,6 +15,11 @@
 
 }
 
+.Home{
+  background-color: lightgrey;
+
+}
+
 .Cards{
   padding-left: 5%;
   padding-right: 5%;
@@ -22,60 +27,12 @@
   padding-bottom: 1.5%;
 
 }
-.Anchor{
-  padding-top: 15%;
-  padding-left: 10%;
-  padding-right: 1%;
-  padding-bottom: 0.5%;
-  color:black;
 
+.h1{
 
-}
-
-.CustCarousel{
-  padding-top: 2.5%;
-  padding-left: 25%;
-  padding-right: 25%;
-  padding-bottom: 5%;
-  height: 10%;
-  background-color: #212121;
-  text-align:right;
-
-}
-
-.Sup1{
   color: white;
-  background: #424242;
-
-}
-.Sup2{
-  color: white;
-  background: #757575;
 }
 
-.CardText{
-  text-align: center;
-  font-size: 24px;
-  border-radius: 10px;
-
-}
-.CardBlock{
-  text-align: block;
-  padding: 10%;
-  font-size: 125%;
-
-}
-.CardsFull{
-  padding-left: 0%;
-  padding-right: 0%;
-  margin-right: 0%;
-}
-
-
-.CardTitle{
-
-
-}
 
 .HeroText{
 	color: white;
@@ -109,15 +66,6 @@
   display: flex;
   text-align: center;
 	margin: auto;
-
-}
-
-.NavLink{
-  color: white !important;
-
-}
-.SnapWidget{
-  width: 100%;
 
 }
 
