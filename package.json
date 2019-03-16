@@ -12,7 +12,7 @@
     "fsevents": "^1.2.7",
     "jquery": "^3.3.1",
     "mdbootstrap": "^4.7.4",
-    "mdbreact": "^4.10.0",
+    "mdbreact": "^4.11.0",
     "node": "^11.9.0",
     "node-gyp": "^3.8.0",
     "prerendercloud": "^1.40.1",

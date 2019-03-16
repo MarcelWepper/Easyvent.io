@@ -6,6 +6,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import ScrollableAnchor from 'react-scrollable-anchor';
 import { Container, Row, Col, Jumbotron, Card, CardImg, CardText, CardBody,
   CardTitle } from 'reactstrap';
+import { MDBJumbotron, MDBContainer } from "mdbreact";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
@@ -46,21 +47,13 @@ export default class Home extends React.Component {
         </LazyHero>
         </ScrollableAnchor>
 
-
-
-
-
-
-
-
-
         <ScrollableAnchor id={'team'}>
-        <div class="jumbotron jumbotron-fluid text-center mdb-color lighten-2 white-text mx-2 mb-5">
-         <div class="container">
-           <h2 class="display-4">Unser Team</h2>
-           <p class="lead">Hier entsteht unser Team</p>
-         </div>
-        </div>
+          <MDBJumbotron fluid >
+            <MDBContainer>
+              <h2 className="display-4">Unser Team</h2>
+              <p className="lead">Hier wirst du bald unser Team sehen.</p>
+            </MDBContainer>
+          </MDBJumbotron>
         </ScrollableAnchor>
 
 				{/*	Hier wird der Cookie und deren Parameter bestimmt	*/}

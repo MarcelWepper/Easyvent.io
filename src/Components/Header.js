@@ -1,40 +1,61 @@
 import React from 'react';
-import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavbarToggler, MDBCollapse, MDBNavItem, MDBNavLink } from 'mdbreact';
+import { MDBNavbar, MDBContainer, MDBNavbarBrand, MDBNavbarNav, MDBNavbarToggler, MDBCollapse, MDBNavItem, MDBNavLink } from 'mdbreact';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import './Home.css'
 import Brand from'./Pics/brand.png';
 
 class Header extends React.Component {
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      collapse: false,
+    };
+    this.onClick = this.onClick.bind(this);
+  }
+
+  componentDidUpdate(){
+    if (this.state.collapse) {
+      this.setState({
+      collapse:false
+      });
+
+    }
+
+  }
+
+  onClick() {
+    this.setState({
+      collapse: !this.state.collapse,
+    });
+  }
+
 
   render() {
     return (
       <div>
-      <nav class="navbar fixed-top navbar-expand-lg navbar-dark primary-color scrolling-navbar">
-          <a class="navbar-brand" href="/#">
-          <img src={Brand} height="30"/> easyvent.io
-          </a>
+        <MDBNavbar color="black" expand="md" fixed="top" scrolling transparent dark>
+        <MDBNavbarBrand href="/">
+          <img src={Brand} height="32px" width="32px" alt="" /><strong>easyvent.io</strong>
+        </MDBNavbarBrand>
+        {!this.state.isWideEnough && <MDBNavbarToggler onClick={this.onClick} />}
+        <MDBCollapse isOpen={this.state.collapse} navbar>
+          <MDBNavbarNav right>
+            <MDBNavItem>
+              <MDBNavLink to="/#hero">Home</MDBNavLink>
+            </MDBNavItem>
+            <MDBNavItem>
+              <MDBNavLink to="/#team">Team</MDBNavLink>
+            </MDBNavItem>
+            <MDBNavItem>
+              <MDBNavLink to="/contact">Kontakt</MDBNavLink>
+            </MDBNavItem>
+          </MDBNavbarNav>
+        </MDBCollapse>
+      </MDBNavbar>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
-            aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-  <div class="collapse navbar-collapse" id="basicExampleNav">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="/#hero">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/#team">Team</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/contact">Kontakt</a>
-              </li>
-            </ul>
           </div>
-        </nav>
-      </div>
+
     );
   }
 }
