@@ -19,6 +19,9 @@ import Florian from'./Pics/florian.png';
 import Christopher from'./Pics/christopher.png';
 import Emanuel from'./Pics/emanuel.png';
 import Marvin from'./Pics/marvin.png';
+import Phone from'./Pics/phone.jpg';
+import Concert from'./Pics/concert.jpg';
+
 
 
 export default class Home extends React.Component {
@@ -52,7 +55,7 @@ export default class Home extends React.Component {
         </ScrollableAnchor>
 
         <ScrollableAnchor id={'team'}>
-          <MDBJumbotron fluid >
+          <MDBJumbotron fluid className="h1">
             <MDBContainer color="elegant-color-dark">
 
             <Animation type="fadeIn" duration="1s" delay="0.5s" reveal>
@@ -65,11 +68,11 @@ export default class Home extends React.Component {
               </MDBRow>
 
               <MDBRow>
-              <MDBCol size="md" sm ="12">
+              <MDBCol size="lg" md= "6" sm ="12" className="Padding">
                 <MDBCard>
                   <MDBCardImage top src={Christopher} waves="false" alt="MDBCard image cap" />
                   <MDBCardBody className="elegant-color white-text rounded-bottom">
-                    <MDBCardTitle>Christopher Hilgert</MDBCardTitle>
+                    <MDBCardTitle>Christopher <br/> Hilgert</MDBCardTitle>
                     <hr className="hr-light" />
                     <MDBCardText className="white-text">
                       Unser Man für die gute Laune.
@@ -79,11 +82,11 @@ export default class Home extends React.Component {
                 <h1/> <h1/>
               </MDBCol>
 
-              <MDBCol size="md" sm ="12">
+              <MDBCol size="lg" md= "6" sm ="12" className="Padding">
                 <MDBCard>
                   <MDBCardImage top src={Emanuel} waves="false" alt="MDBCard image cap" />
                   <MDBCardBody className="elegant-color white-text rounded-bottom">
-                    <MDBCardTitle>Emanuel Friedle</MDBCardTitle>
+                    <MDBCardTitle>Emanuel <br/> Friedle</MDBCardTitle>
                     <hr className="hr-light" />
                     <MDBCardText className="white-text">
                       Unser Man für das Back-End.
@@ -93,11 +96,11 @@ export default class Home extends React.Component {
                 <h1/> <h1/>
               </MDBCol>
 
-              <MDBCol size="md" sm ="12">
+              <MDBCol size="lg" md= "6" sm ="12" className="Padding">
                 <MDBCard>
                   <MDBCardImage top src={Florian} waves="false" alt="MDBCard image cap" />
                   <MDBCardBody className="elegant-color white-text rounded-bottom">
-                    <MDBCardTitle>Florian Bambach</MDBCardTitle>
+                    <MDBCardTitle>Florian <br/>Bambach</MDBCardTitle>
                     <hr className="hr-light" />
                     <MDBCardText className="white-text">
                       Unser Man fürs Online Marketing.
@@ -107,11 +110,11 @@ export default class Home extends React.Component {
                 <h1/> <h1/>
               </MDBCol>
 
-                <MDBCol size="md" sm ="12">
+                <MDBCol size="lg" md= "6" sm ="12" className="Padding">
                   <MDBCard>
                     <MDBCardImage top src={Marvin} waves="false" alt="MDBCard image cap" />
                     <MDBCardBody className="elegant-color white-text rounded-bottom">
-                      <MDBCardTitle>Marvin   Denk</MDBCardTitle>
+                      <MDBCardTitle>Marvin <br/>Denk</MDBCardTitle>
                       <hr className="hr-light" />
                       <MDBCardText className="white-text">
                         Unser Man für das Pitchen.
@@ -121,11 +124,11 @@ export default class Home extends React.Component {
                   <h1/> <h1/>
                 </MDBCol>
 
-                <MDBCol size="md" sm ="12">
+                <MDBCol size="lg" md= "6" sm ="12" className="Padding">
                   <MDBCard>
                     <MDBCardImage top src={Marcel} waves="false" alt="MDBCard image cap" />
                     <MDBCardBody className="elegant-color white-text rounded-bottom">
-                      <MDBCardTitle>Marcel Wepper</MDBCardTitle>
+                      <MDBCardTitle>Marcel <br/>Wepper</MDBCardTitle>
                       <hr className="hr-light" />
                       <MDBCardText className="white-text">
                         Unser Man für das Front-End.
@@ -138,26 +141,54 @@ export default class Home extends React.Component {
               </MDBRow>
               </Animation>
             </MDBContainer>
-          </MDBJumbotron>
-        </ScrollableAnchor>
+
+            </MDBJumbotron>
+            </ScrollableAnchor>
 
 
-        <ScrollableAnchor id={'team'}>
-          <MDBJumbotron fluid className="h1">
-            <MDBContainer color="elegant-color-dark">
+            <ScrollableAnchor id={'idee'}>
+            <MDBJumbotron fluid className="h1" color="white">
+            <MDBContainer fluid>
+            <MDBRow>
+              <MDBCol className="Platzhalter"size="12">
+              </MDBCol>
+            </MDBRow>
 
-              <MDBRow>
-                <MDBCol size="12">
-                  <h1>Unsere Idee:</h1>
+            <MDBRow>
+              <MDBCol size="12">
+              <h1> Unsere Idee: </h1>
+              </MDBCol>
+            </MDBRow>
+
+            <MDBRow>
+              <MDBCol lg="6">
+                  <img src={Concert} className="img-fluid" alt="" />
+                </MDBCol>
+                <MDBCol lg="6" no className="h1">
+                <div className="h1">
+                  <h1>Digitale Events und Zukunftsmusik?</h1>
+                  <h2 style={{"fontSize":"0.6em"}}>Die Veranstaltungsbranche stehteinem Wandel bevor - der Megatrend Digitalisierung wird sich zukünftig auf die Veranstaltungsbranche auswirken </h2>
+                  <h2 style={{"fontSize":"0.6em"}}>"Wir machen die Veranstaltungungsbranche fit für die Digitalisieurng von Morgen." </h2>
+                </div>
                 </MDBCol>
               </MDBRow>
 
-              <MDBRow>
-                <MDBCol size="12">
-                  <h1>Folgt noch...</h1>
+              <MDBRow >
+                <MDBCol lg="6" className="h1">
+                <div className="h1">
+                  <h1>Was ist die Lösung?</h1>
+                  <h2 style={{"fontSize":"0.6em"}}>SAAS für Veranstalter in Kombination mit einer Besucherapp zur:</h2>
+                  <h2 style={{"fontSize":"0.6em"}}> - Interaktion zwischen Besucher und Veranstaltung</h2>
+                  <h2 style={{"fontSize":"0.6em"}}> - Optimierung bestehender Veranstaltungsprozesse</h2>
+                  <h2 style={{"fontSize":"0.6em"}}> - Analyse von Kundenpräferenzen durch Datenpunkte</h2>
+                  </div>
+                </MDBCol>
+
+                <MDBCol no-gutters lg="6">
+                  <img src={Phone} className="img-fluid" alt="" />
                 </MDBCol>
               </MDBRow>
-            </MDBContainer>
+              </MDBContainer>
           </MDBJumbotron>
         </ScrollableAnchor>
 

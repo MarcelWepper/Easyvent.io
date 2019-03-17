@@ -16,7 +16,7 @@
 }
 
 .Home{
-  background-color: lightgrey;
+  background-color: black;
 
 }
 
@@ -28,11 +28,48 @@
 
 }
 
-.h1{
-
+.Jumbotron{
+  text-align:center;
   color: white;
+  margin-bottom: 0%;
+  background-color: #115115115;
+
 }
 
+.Sup1{
+  color: white;
+  background: #424242;
+
+}
+.Sup2{
+  text-align: center;
+  color: white;
+  background: #757575;
+}
+
+.h1{
+
+  padding-left: 2%;
+  padding-top: 2%;
+  color: white;
+  text: center;
+
+}
+
+.h2{
+
+  padding-left: 4%;
+  padding-top: 4%;
+  color: white;
+  text: center;
+  background-color: white;
+
+}
+.Padding{
+margin-left: 7.5px;
+margin-right: 7.5px;
+
+}
 
 .HeroText{
 	color: white;
@@ -100,8 +137,7 @@
 
 .Platzhalter{
   opacity: 0;
-  padding: 1%;
-
+  padding: 3%;
 }
 
 .Info{
