@@ -17,7 +17,7 @@
     "node-gyp": "^3.8.0",
     "prerendercloud": "^1.40.1",
     "react": "^16.8.1",
-    "react-anchor-link-smooth-scroll": "^1.0.11",
+    "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-cookie-consent": "^2.1.0",
     "react-dom": "^16.8.1",
     "react-ga": "^2.5.7",
@@ -28,7 +28,6 @@
     "react-router-dom": "^4.3.1",
     "react-router-sitemap": "^1.2.0",
     "react-scripts": "^2.1.8",
-    "react-scrollable-anchor": "^0.6.1",
     "react-sticky-footer": "0.1.0-rc3",
     "reactstrap": "^7.1.0",
     "styled-components": "^4.1.3"

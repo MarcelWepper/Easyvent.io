@@ -3,7 +3,6 @@ import LazyHero from 'react-lazy-hero';
 import CookieConsent from "react-cookie-consent";
 import {Helmet} from "react-helmet";
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import ScrollableAnchor from 'react-scrollable-anchor';
 import { Container, Row, Col, Jumbotron, Card, CardImg, CardText, CardBody,
   CardTitle } from 'reactstrap';
 import { Animation, MDBJumbotron, MDBContainer,MDBRow, MDBCol, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBIcon } from "mdbreact";
@@ -35,9 +34,9 @@ export default class Home extends React.Component {
 			<div className="Home">
 
 				{/* Hero-Image */}
-        <ScrollableAnchor id={'hero'}>
-				    <LazyHero color = "#000000" parallaxOffset="50" minHeight='100vh' opacity ="0.5" imageSrc={Hero} >
-              <Container className= "grid">
+        <section id='home'>
+				   <LazyHero color = "#000000" parallaxOffset="50" minHeight='100vh' opacity ="0.5" imageSrc={Hero} >
+            <Container className= "grid">
               {/* 	Hier die trasnparente Box mit allem	*/}
               <div className= "HeroText">
                 <Row>
@@ -52,9 +51,10 @@ export default class Home extends React.Component {
               </div>
             </Container>
           </LazyHero>
-        </ScrollableAnchor>
 
-        <ScrollableAnchor id={'team'}>
+        </section>
+
+        <section id='team'>
           <MDBJumbotron fluid className="h1">
             <MDBContainer color="elegant-color-dark">
 
@@ -143,10 +143,9 @@ export default class Home extends React.Component {
             </MDBContainer>
 
             </MDBJumbotron>
-            </ScrollableAnchor>
+            </section>
 
-
-            <ScrollableAnchor id={'idee'}>
+            <section id='idee'>
             <MDBJumbotron fluid className="h1" color="white">
             <MDBContainer fluid>
             <MDBRow>
@@ -190,7 +189,7 @@ export default class Home extends React.Component {
               </MDBRow>
               </MDBContainer>
           </MDBJumbotron>
-        </ScrollableAnchor>
+          </section>
 
 				{/*	Hier wird der Cookie und deren Parameter bestimmt	*/}
 				<CookieConsent

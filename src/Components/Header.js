@@ -1,7 +1,7 @@
 import React from 'react';
 import { MDBNavbar, MDBContainer, MDBNavbarBrand, MDBNavbarNav, MDBNavbarToggler, MDBCollapse, MDBNavItem, MDBNavLink } from 'mdbreact';
-import AnchorLink from 'react-anchor-link-smooth-scroll'
-import './Home.css'
+import './Home.css';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Brand from'./Pics/brand.png';
 
 class Header extends React.Component {
@@ -42,10 +42,13 @@ class Header extends React.Component {
         <MDBCollapse isOpen={this.state.collapse} navbar>
           <MDBNavbarNav right>
             <MDBNavItem>
-              <MDBNavLink to="/#hero">Home</MDBNavLink>
+              <AnchorLink offset='60' href='#home'>Home</AnchorLink>
             </MDBNavItem>
             <MDBNavItem>
-              <MDBNavLink to="/#team">Team</MDBNavLink>
+              <AnchorLink offset='60' href='#team'>Team</AnchorLink>
+            </MDBNavItem>
+            <MDBNavItem>
+              <AnchorLink offset='60' href='#idee'>Idee</AnchorLink>
             </MDBNavItem>
             <MDBNavItem>
               <MDBNavLink to="/contact">Kontakt</MDBNavLink>
