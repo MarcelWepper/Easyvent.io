@@ -3,6 +3,8 @@ import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavbarToggler, MDBCollapse,
 import './Home.css';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Brand from'./Pics/brand.png';
+import NavHome from './NavHome.js';
+import NavContact from './NavContact.js';
 
 class Header extends React.Component {
 
@@ -10,8 +12,10 @@ class Header extends React.Component {
     super(props);
     this.state = {
       collapse: false,
+      contacts: true
     };
     this.onClick = this.onClick.bind(this);
+
   }
 
   componentDidUpdate(){
@@ -32,6 +36,11 @@ class Header extends React.Component {
 
 
   render() {
+
+    const navigation = this.state.contacts ? (<NavHome/>)
+
+      :(        <NavContact/>);
+
     return (
       <div>
         <MDBNavbar color="elegant-color-dark" expand="md" fixed="top" scrolling transparent dark>
@@ -40,21 +49,19 @@ class Header extends React.Component {
         </MDBNavbarBrand>
         {!this.state.isWideEnough && <MDBNavbarToggler onClick={this.onClick} />}
         <MDBCollapse isOpen={this.state.collapse} navbar>
-          <MDBNavbarNav right>
-            <MDBNavItem>
-              <AnchorLink className="NavbarItem" offset='60' href='#home'>Home</AnchorLink>
-            </MDBNavItem>
-            <MDBNavItem>
-              <AnchorLink  className="NavbarItem" offset='60' href='#idee'>Idee</AnchorLink>
-            </MDBNavItem>
-            <MDBNavItem>
-              <AnchorLink className="NavbarItem" offset='60' href='#team'>Team</AnchorLink>
-            </MDBNavItem>
-            <MDBNavItem>
-              <MDBNavLink to="/contact">Kontakt</MDBNavLink>
-            </MDBNavItem>
-          </MDBNavbarNav>
+
+          {navigation}
+
         </MDBCollapse>
+        <button
+
+        onClick={() => {
+          this.setState({contacts:!this.state.contacts});
+
+        }}
+        >
+        Hide
+        </button>
       </MDBNavbar>
 
           </div>
