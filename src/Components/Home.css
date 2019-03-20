@@ -47,6 +47,23 @@
   background: #757575;
 }
 
+.NavbarItem{
+  color: #fff;
+    transition: 0.35s;
+    padding-right: 6px;
+    padding-left: 6px;
+    display: block;
+    padding: .5rem 1rem;
+    position: relative;
+    overflow: hidden;
+    touch-action: none;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: transparent;
+    box-sizing: border-box;
+
+}
+
 .h1{
 
   padding-left: 2%;
@@ -137,7 +154,7 @@ margin-right: 7.5px;
 
 .Platzhalter{
   opacity: 0;
-  padding: 3%;
+  padding: 0.5%;
 }
 
 .Info{

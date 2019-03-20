@@ -2,10 +2,8 @@ import React from 'react';
 import LazyHero from 'react-lazy-hero';
 import CookieConsent from "react-cookie-consent";
 import {Helmet} from "react-helmet";
-import AnchorLink from 'react-anchor-link-smooth-scroll';
-import { Container, Row, Col, Jumbotron, Card, CardImg, CardText, CardBody,
-  CardTitle } from 'reactstrap';
-import { Animation, MDBJumbotron, MDBContainer,MDBRow, MDBCol, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBIcon } from "mdbreact";
+import { Container, Row, Col } from 'reactstrap';
+import { Animation, MDBJumbotron, MDBContainer,MDBRow, MDBCol, MDBCard, MDBCardBody, MDBCardTitle, MDBCardText } from "mdbreact";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
@@ -51,145 +49,134 @@ export default class Home extends React.Component {
               </div>
             </Container>
           </LazyHero>
-
         </section>
 
-        <section id='team'>
-          <MDBJumbotron fluid className="h1">
-            <MDBContainer color="elegant-color-dark">
-
-            <Animation type="fadeIn" duration="1s" delay="0.5s" reveal>
-              <MDBRow>
-
-
-                <MDBCol size="12">
-                  <h1 className="h1">Unser Team:</h1>
-                </MDBCol>
-              </MDBRow>
-
-              <MDBRow>
-              <MDBCol size="lg" md= "6" sm ="12" className="Padding">
-                <MDBCard>
-                  <MDBCardImage top src={Christopher} waves="false" alt="MDBCard image cap" />
-                  <MDBCardBody className="elegant-color white-text rounded-bottom">
-                    <MDBCardTitle>Christopher <br/> Hilgert</MDBCardTitle>
-                    <hr className="hr-light" />
-                    <MDBCardText className="white-text">
-                      Unser Man für die gute Laune.
-                    </MDBCardText>
-                  </MDBCardBody>
-                </MDBCard>
-                <h1/> <h1/>
-              </MDBCol>
-
-              <MDBCol size="lg" md= "6" sm ="12" className="Padding">
-                <MDBCard>
-                  <MDBCardImage top src={Emanuel} waves="false" alt="MDBCard image cap" />
-                  <MDBCardBody className="elegant-color white-text rounded-bottom">
-                    <MDBCardTitle>Emanuel <br/> Friedle</MDBCardTitle>
-                    <hr className="hr-light" />
-                    <MDBCardText className="white-text">
-                      Unser Man für das Back-End.
-                    </MDBCardText>
-                  </MDBCardBody>
-                </MDBCard>
-                <h1/> <h1/>
-              </MDBCol>
-
-              <MDBCol size="lg" md= "6" sm ="12" className="Padding">
-                <MDBCard>
-                  <MDBCardImage top src={Florian} waves="false" alt="MDBCard image cap" />
-                  <MDBCardBody className="elegant-color white-text rounded-bottom">
-                    <MDBCardTitle>Florian <br/>Bambach</MDBCardTitle>
-                    <hr className="hr-light" />
-                    <MDBCardText className="white-text">
-                      Unser Man fürs Online Marketing.
-                    </MDBCardText>
-                  </MDBCardBody>
-                </MDBCard>
-                <h1/> <h1/>
-              </MDBCol>
-
-                <MDBCol size="lg" md= "6" sm ="12" className="Padding">
-                  <MDBCard>
-                    <MDBCardImage top src={Marvin} waves="false" alt="MDBCard image cap" />
-                    <MDBCardBody className="elegant-color white-text rounded-bottom">
-                      <MDBCardTitle>Marvin <br/>Denk</MDBCardTitle>
-                      <hr className="hr-light" />
-                      <MDBCardText className="white-text">
-                        Unser Man für das Pitchen.
-                      </MDBCardText>
-                    </MDBCardBody>
-                  </MDBCard>
-                  <h1/> <h1/>
-                </MDBCol>
-
-                <MDBCol size="lg" md= "6" sm ="12" className="Padding">
-                  <MDBCard>
-                    <MDBCardImage top src={Marcel} waves="false" alt="MDBCard image cap" />
-                    <MDBCardBody className="elegant-color white-text rounded-bottom">
-                      <MDBCardTitle>Marcel <br/>Wepper</MDBCardTitle>
-                      <hr className="hr-light" />
-                      <MDBCardText className="white-text">
-                        Unser Man für das Front-End.
-                      </MDBCardText>
-                    </MDBCardBody>
-                  </MDBCard>
-                  <h1/> <h1/>
-                </MDBCol>
-
-              </MDBRow>
-              </Animation>
-            </MDBContainer>
-
-            </MDBJumbotron>
-            </section>
-
-            <section id='idee'>
-            <MDBJumbotron fluid className="h1" color="white">
+        <section id='idee'>
+          <MDBJumbotron fluid className="h1" color="white">
             <MDBContainer fluid>
-            <MDBRow>
-              <MDBCol className="Platzhalter"size="12">
-              </MDBCol>
-            </MDBRow>
-
-            <MDBRow>
-              <MDBCol size="12">
-              <h1> Unsere Idee: </h1>
-              </MDBCol>
-            </MDBRow>
-
-            <MDBRow>
-              <MDBCol lg="6">
+              <MDBRow>
+                <MDBCol className="Platzhalter"size="12"/>
+              </MDBRow>
+              <MDBRow>
+                <MDBCol size="12">
+                  <h1> Unsere Idee: </h1>
+                </MDBCol>
+              </MDBRow>
+              <MDBRow>
+                <MDBCol lg="6">
                   <img src={Concert} className="img-fluid" alt="" />
                 </MDBCol>
                 <MDBCol lg="6" no className="h1">
-                <div className="h1">
-                  <h1>Digitale Events und Zukunftsmusik?</h1>
-                  <h2 style={{"fontSize":"0.6em"}}>Die Veranstaltungsbranche stehteinem Wandel bevor - der Megatrend Digitalisierung wird sich zukünftig auf die Veranstaltungsbranche auswirken </h2>
-                  <h2 style={{"fontSize":"0.6em"}}>"Wir machen die Veranstaltungungsbranche fit für die Digitalisieurng von Morgen." </h2>
-                </div>
-                </MDBCol>
-              </MDBRow>
-
-              <MDBRow >
-                <MDBCol lg="6" className="h1">
-                <div className="h1">
-                  <h1>Was ist die Lösung?</h1>
-                  <h2 style={{"fontSize":"0.6em"}}>SAAS für Veranstalter in Kombination mit einer Besucherapp zur:</h2>
-                  <h2 style={{"fontSize":"0.6em"}}> - Interaktion zwischen Besucher und Veranstaltung</h2>
-                  <h2 style={{"fontSize":"0.6em"}}> - Optimierung bestehender Veranstaltungsprozesse</h2>
-                  <h2 style={{"fontSize":"0.6em"}}> - Analyse von Kundenpräferenzen durch Datenpunkte</h2>
+                  <div className="h1">
+                    <h1>Digitale Events und Zukunftsmusik?</h1>
+                    <h2 style={{"fontSize":"0.6em"}}>Die Veranstaltungsbranche stehteinem Wandel bevor - der Megatrend Digitalisierung wird sich zukünftig auf die Veranstaltungsbranche auswirken </h2>
+                    <h2 style={{"fontSize":"0.6em"}}>"Wir machen die Veranstaltungungsbranche fit für die Digitalisieurng von Morgen." </h2>
                   </div>
                 </MDBCol>
-
-                <MDBCol no-gutters lg="6">
-                  <img src={Phone} className="img-fluid" alt="" />
-                </MDBCol>
               </MDBRow>
+              <MDBRow >
+                <MDBCol lg="6" className="h1">
+                  <div className="h1">
+                    <h1>Was ist die Lösung?</h1>
+                    <h2 style={{"fontSize":"0.6em"}}>SAAS für Veranstalter in Kombination mit einer Besucherapp zur:</h2>
+                    <h2 style={{"fontSize":"0.6em"}}> - Interaktion zwischen Besucher und Veranstaltung</h2>
+                    <h2 style={{"fontSize":"0.6em"}}> - Optimierung bestehender Veranstaltungsprozesse</h2>
+                    <h2 style={{"fontSize":"0.6em"}}> - Analyse von Kundenpräferenzen durch Datenpunkte</h2>
+                    </div>
+                  </MDBCol>
+                  <MDBCol no-gutters lg="6">
+                    <img src={Phone} className="img-fluid" alt="" />
+                  </MDBCol>
+                </MDBRow>
               </MDBContainer>
-          </MDBJumbotron>
+            </MDBJumbotron>
           </section>
+
+          <section id='team'>
+            <MDBJumbotron fluid className="h1">
+              <MDBContainer color="elegant-color-dark">
+                <Animation type="fadeIn" duration="1s" delay="0.5s" reveal>
+                  <MDBRow>
+                    <MDBCol size="12">
+                      <h1 className="h1">Unser Team:</h1>
+                    </MDBCol>
+                  </MDBRow>
+                  <MDBRow>
+                    <MDBCol size="lg" md= "12" sm ="12" className="Padding">
+                    <MDBCard>
+                      <img src={Christopher} width="100%" height="100%" alt="ProfilePicture"rounded responsive />
+                      <MDBCardBody className="elegant-color white-text rounded-bottom">
+                        <MDBCardTitle>Christopher <br/> Hilgert</MDBCardTitle>
+                        <hr className="hr-light" />
+                        <MDBCardText className="white-text">
+                          Unser Mann für die Finanzen.
+                        </MDBCardText>
+                      </MDBCardBody>
+                    </MDBCard>
+                    <br/>
+                </MDBCol>
+                <MDBCol size="lg" md= "12" sm ="12" className="Padding">
+                  <MDBCard>
+                    <img src={Emanuel} width="100%" height="100%" alt="ProfilePicture"rounded responsive />
+                    <MDBCardBody className="elegant-color white-text rounded-bottom">
+                      <MDBCardTitle>Emanuel <br/> Friedle</MDBCardTitle>
+                      <hr className="hr-light" />
+                      <MDBCardText className="white-text">
+                        Unser Mann für das Back-End.
+                      </MDBCardText>
+                    </MDBCardBody>
+                  </MDBCard>
+                  <br/>
+                </MDBCol>
+
+                <MDBCol size="lg" md= "12" sm ="12" className="Padding">
+                  <MDBCard>
+                    <img src={Florian} width="100%" height="100%" alt="ProfilePicture"rounded responsive />
+                    <MDBCardBody className="elegant-color white-text rounded-bottom">
+                      <MDBCardTitle>Florian <br/>Bambach</MDBCardTitle>
+                      <hr className="hr-light" />
+                      <MDBCardText className="white-text">
+                        Unser Mann fürs Online Marketing.
+                      </MDBCardText>
+                    </MDBCardBody>
+                  </MDBCard>
+                  <br/>
+                </MDBCol>
+
+                  <MDBCol size="lg" md= "12" sm ="12" className="Padding">
+                    <MDBCard>
+                      <img src={Marvin} width="100%" height="100%" alt="ProfilePicture"rounded responsive />
+                      <MDBCardBody className="elegant-color white-text rounded-bottom">
+                        <MDBCardTitle>Marvin <br/>Denk</MDBCardTitle>
+                        <hr className="hr-light" />
+                        <MDBCardText className="white-text">
+                          Unser Mann für das Pitchen.
+                        </MDBCardText>
+                      </MDBCardBody>
+                    </MDBCard>
+                    <br/>
+                  </MDBCol>
+
+                  <MDBCol size="lg" md= "12" sm ="12" className="Padding">
+                    <MDBCard>
+                      <img src={Marcel} width="100%" height="100%" alt="ProfilePicture"rounded responsive />
+                      <MDBCardBody className="elegant-color white-text rounded-bottom">
+                        <MDBCardTitle>Marcel <br/>Wepper</MDBCardTitle>
+                        <hr className="hr-light" />
+                        <MDBCardText className="white-text">
+                          Unser Mann für das Front-End.
+                        </MDBCardText>
+                      </MDBCardBody>
+                    </MDBCard>
+                    <br/>
+                  </MDBCol>
+
+                </MDBRow>
+                </Animation>
+              </MDBContainer>
+
+              </MDBJumbotron>
+              </section>
 
 				{/*	Hier wird der Cookie und deren Parameter bestimmt	*/}
 				<CookieConsent
