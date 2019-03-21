@@ -109,7 +109,7 @@ export default class Home extends React.Component {
                         <MDBCardTitle>Christopher <br/> Hilgert</MDBCardTitle>
                         <hr className="hr-light" />
                         <MDBCardText className="white-text">
-                          Im Pitch ist Christopher für die Finanzen.
+                          Finanzplanung, Unternehmensorganisation
                         </MDBCardText>
                       </MDBCardBody>
                     </MDBCard>
@@ -122,7 +122,7 @@ export default class Home extends React.Component {
                       <MDBCardTitle>Emanuel <br/> Friedle</MDBCardTitle>
                       <hr className="hr-light" />
                       <MDBCardText className="white-text">
-                        Im Pitch ist Emanuel für das Back-End.
+                        Backend Development, Service Administration
                       </MDBCardText>
                     </MDBCardBody>
                   </MDBCard>
@@ -136,7 +136,7 @@ export default class Home extends React.Component {
                       <MDBCardTitle>Florian <br/>Bambach</MDBCardTitle>
                       <hr className="hr-light" />
                       <MDBCardText className="white-text">
-                        Im Pitch ist Florian für das Online Marketing.
+                        Marketing, Vertrieb, Partnership
                       </MDBCardText>
                     </MDBCardBody>
                   </MDBCard>
@@ -150,7 +150,7 @@ export default class Home extends React.Component {
                         <MDBCardTitle>Marvin <br/>Denk</MDBCardTitle>
                         <hr className="hr-light" />
                         <MDBCardText className="white-text">
-                          Im Pitch ist Marvin für das Pitchen.
+                          Product Development, Marketing, Design, UI/UX
                         </MDBCardText>
                       </MDBCardBody>
                     </MDBCard>
@@ -164,7 +164,7 @@ export default class Home extends React.Component {
                         <MDBCardTitle>Marcel <br/>Wepper</MDBCardTitle>
                         <hr className="hr-light" />
                         <MDBCardText className="white-text">
-                          Im Pitch ist Marcel für das Front-End.
+                          Frontend Development, Service Administration
                         </MDBCardText>
                       </MDBCardBody>
                     </MDBCard>
