@@ -109,7 +109,7 @@ export default class Home extends React.Component {
                         <MDBCardTitle>Christopher <br/> Hilgert</MDBCardTitle>
                         <hr className="hr-light" />
                         <MDBCardText className="white-text">
-                          Unser Mann für die Finanzen.
+                          Im Pitch ist Christopher für die Finanzen.
                         </MDBCardText>
                       </MDBCardBody>
                     </MDBCard>
@@ -122,7 +122,7 @@ export default class Home extends React.Component {
                       <MDBCardTitle>Emanuel <br/> Friedle</MDBCardTitle>
                       <hr className="hr-light" />
                       <MDBCardText className="white-text">
-                        Unser Mann für das Back-End.
+                        Im Pitch ist Emanuel für das Back-End.
                       </MDBCardText>
                     </MDBCardBody>
                   </MDBCard>
@@ -136,7 +136,7 @@ export default class Home extends React.Component {
                       <MDBCardTitle>Florian <br/>Bambach</MDBCardTitle>
                       <hr className="hr-light" />
                       <MDBCardText className="white-text">
-                        Unser Mann fürs Online Marketing.
+                        Im Pitch ist Florian für das Online Marketing.
                       </MDBCardText>
                     </MDBCardBody>
                   </MDBCard>
@@ -150,7 +150,7 @@ export default class Home extends React.Component {
                         <MDBCardTitle>Marvin <br/>Denk</MDBCardTitle>
                         <hr className="hr-light" />
                         <MDBCardText className="white-text">
-                          Unser Mann für das Pitchen.
+                          Im Pitch ist Marvin für das Pitchen.
                         </MDBCardText>
                       </MDBCardBody>
                     </MDBCard>
@@ -164,7 +164,7 @@ export default class Home extends React.Component {
                         <MDBCardTitle>Marcel <br/>Wepper</MDBCardTitle>
                         <hr className="hr-light" />
                         <MDBCardText className="white-text">
-                          Unser Mann für das Front-End.
+                          Im Pitch ist Marcel für das Front-End.
                         </MDBCardText>
                       </MDBCardBody>
                     </MDBCard>
