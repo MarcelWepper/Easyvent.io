@@ -16,6 +16,7 @@
     "node": "^11.9.0",
     "node-gyp": "^3.8.0",
     "prerendercloud": "^1.40.1",
+    "qrcode.react": "^0.9.3",
     "react": "^16.8.1",
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-cookie-consent": "^2.1.0",

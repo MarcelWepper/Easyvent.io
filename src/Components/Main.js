@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 
 import Home from './Home';
 import Contact from './Contact';
+import QR from './QR';
 import './Home.css';
 
 // The Main component renders one of the three provided
@@ -15,6 +16,7 @@ const Main = () => (
     <Switch>
       <Route exact path='/' component={Home}/>
       <Route exact path='/contact' component={Contact}/>
+      <Route exact path='/qr' component={QR}/>
     </Switch>
   </main>
 )
