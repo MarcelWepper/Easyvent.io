@@ -12,7 +12,8 @@ ReactGA.initialize('UA-133010328-1');
 ReactGA.pageview(window.location.pathname + window.location.search);
 
 const initialState={
-  home: "home"
+  home: "home",
+  nav: "false"
 
 };
 
@@ -29,6 +30,12 @@ function reducer(state = initialState, action){
           home: "home"
 
         };
+        case "NAVLOCATION":
+          return{
+            home: "location"
+          };
+
+
     default:
       return state;
   }

@@ -51,6 +51,9 @@ class NavHome extends React.Component {
             <MDBNavItem>
               <AnchorLink className="NavbarItem" offset='60' href='#team'>Team</AnchorLink>
             </MDBNavItem>
+            <MDBNavItem>
+              <MDBNavLink to="/location" >Locations</MDBNavLink>
+            </MDBNavItem>
           </MDBNavbarNav>
         </MDBCollapse>
         </MDBNavbar>

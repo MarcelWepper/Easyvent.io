@@ -41,7 +41,7 @@ class Home extends React.Component {
                   <Col> <img src={Brand} width="25%" height="100%" alt="ProfilePicture"rounded responsive /></Col>
                 </Row>
                 <Row>
-                  <Col><h1> Digitalisiere dein Event!</h1></Col>
+                  <Col><h1> Digitalisiere deine Location!</h1></Col>
                 </Row>
                 <Row>
                   <Col><h3> Seite im Aufbau...</h3></Col>
@@ -69,8 +69,8 @@ class Home extends React.Component {
                 <MDBCol lg="6" no className="h1">
                   <div className="h1">
                     <h1>Digitale Events und Zukunftsmusik?</h1>
-                    <h2 style={{"fontSize":"0.6em"}}>Die Veranstaltungsbranche stehteinem Wandel bevor - der Megatrend Digitalisierung wird sich zukünftig auf die Veranstaltungsbranche auswirken </h2>
-                    <h2 style={{"fontSize":"0.6em"}}>"Wir machen die Veranstaltungungsbranche fit für die Digitalisieurng von Morgen." </h2>
+                    <h2 style={{"fontSize":"0.6em"}}>Die Eventbranche steht einem Wandel bevor - der Megatrend Digitalisierung wird sich zukünftig auf die Eventbranche auswirken </h2>
+                    <h2 style={{"fontSize":"0.6em"}}>"Wir machen die Eventbranche fit für die Digitalisieurng von Morgen." </h2>
                   </div>
                 </MDBCol>
               </MDBRow>
@@ -79,8 +79,8 @@ class Home extends React.Component {
                   <div className="h1">
                     <h1>Was ist die Lösung?</h1>
                     <h2 style={{"fontSize":"0.6em"}}>SAAS für Veranstalter in Kombination mit einer Besucherapp zur:</h2>
-                    <h2 style={{"fontSize":"0.6em"}}> - Interaktion zwischen Besucher und Veranstaltung</h2>
-                    <h2 style={{"fontSize":"0.6em"}}> - Optimierung bestehender Veranstaltungsprozesse</h2>
+                    <h2 style={{"fontSize":"0.6em"}}> - Interaktion zwischen Besucher und Event-Veranstaltung</h2>
+                    <h2 style={{"fontSize":"0.6em"}}> - Optimierung bestehender Event-Veranstaltungsprozesse</h2>
                     <h2 style={{"fontSize":"0.6em"}}> - Analyse von Kundenpräferenzen durch Datenpunkte</h2>
                     </div>
                   </MDBCol>
