@@ -33,7 +33,7 @@ class Home extends React.Component {
       <div className="Home">
 				{/* Hero-Image */}
         <section id='home'>
-				   <LazyHero color = "#000000" parallaxOffset="50" minHeight='100vh' opacity ="0.5" imageSrc={Hero} >
+				   <LazyHero color = "#000000" parallaxOffset='50' minHeight='100vh' imageSrc={Hero} >
             <Container className= "grid">
               {/* 	Hier die trasnparente Box mit allem	*/}
               <div className= "HeroText">
