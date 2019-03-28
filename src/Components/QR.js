@@ -2,8 +2,8 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Home.css';
 import { connect } from 'react-redux';
-var QRCode = require('qrcode.react');
 
+var QRCode = require('qrcode.react');
 
 class QR extends React.Component {
 	constructor(props) {

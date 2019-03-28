@@ -1,14 +1,18 @@
 import React from 'react';
 import LazyHero from 'react-lazy-hero';
-
 import './Home.css';
 import Picture from'./Pics/Kontakt.jpg';
+import { connect } from 'react-redux';
 
-export default class Contact extends React.Component {
+class Contact extends React.Component {
 
 	componentWillUnmount(){
     window.scrollTo(0, 0)
   }
+
+	componentDidMount(){
+		this.props.dispatch({ type:"NAVCHANGE"});
+	}
 
 	render(){
 		return(
@@ -86,3 +90,4 @@ export default class Contact extends React.Component {
 		);
 	}
 }
+export default connect()(Contact);
