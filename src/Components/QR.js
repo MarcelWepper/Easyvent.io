@@ -26,8 +26,6 @@ class QR extends React.Component {
  		this.setState({height: (window.innerHeight/2)});
   }
 
-
-
   componentWillUnmount(){
     window.scrollTo(0, 0)
   }
@@ -41,7 +39,5 @@ class QR extends React.Component {
 		);
 	}
 }
-
-
 
 export default connect()(QR);

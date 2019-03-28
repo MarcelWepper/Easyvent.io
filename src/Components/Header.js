@@ -4,17 +4,21 @@ import './Home.css';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Brand from'./Pics/brand.png';
 import NavHome from "./NavHome.js";
-import NavNotHome from "./NavHome.js";
+import NavNotHome from "./NavNotHome.js";
 import { connect } from 'react-redux';
 
 class Header extends React.Component {
 
   render(){
 
-    const isHome = this.props.home;
     return (
-      <div>
-        {isHome ? (<NavHome/>):(<NavNotHome/>)}
+      <div>      
+      {
+        {
+          'home': <NavHome/>,
+          'nothome': <NavNotHome/>
+        }[this.props.home]
+      }
       </div>
     );
   }

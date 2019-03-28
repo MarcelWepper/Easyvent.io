@@ -54,7 +54,6 @@ class NavHome extends React.Component {
             <MDBNavItem>
               <MDBNavLink to="/QR" >QR</MDBNavLink>
             </MDBNavItem>
-
           </MDBNavbarNav>
         </MDBCollapse>
         </MDBNavbar>

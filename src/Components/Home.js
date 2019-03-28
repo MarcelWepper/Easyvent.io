@@ -4,8 +4,7 @@ import CookieConsent from "react-cookie-consent";
 import {Helmet} from "react-helmet";
 import { Container, Row, Col } from 'reactstrap';
 import { Animation, MDBJumbotron, MDBContainer,MDBRow, MDBCol, MDBCard, MDBCardBody, MDBCardTitle, MDBCardText } from "mdbreact";
-
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { connect } from 'react-redux';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Home.css';
@@ -20,17 +19,18 @@ import Phone from'./Pics/phone.jpg';
 import Concert from'./Pics/concert.jpg';
 
 
-
-export default class Home extends React.Component {
+class Home extends React.Component {
 
   componentWillUnmount(){
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 0);
+  }
+  componentDidMount(){
+    this.props.dispatch({ type:"NAVHOME"});
   }
 
 	render(){
 		return(
-			<div className="Home">
-
+      <div className="Home">
 				{/* Hero-Image */}
         <section id='home'>
 				   <LazyHero color = "#000000" parallaxOffset="50" minHeight='100vh' opacity ="0.5" imageSrc={Hero} >
@@ -122,7 +122,7 @@ export default class Home extends React.Component {
                       <MDBCardTitle>Emanuel <br/> Friedle</MDBCardTitle>
                       <hr className="hr-light" />
                       <MDBCardText className="white-text">
-                        Backend Development, Service Administration
+                        Backend-Development, Service Administration
                       </MDBCardText>
                     </MDBCardBody>
                   </MDBCard>
@@ -164,7 +164,7 @@ export default class Home extends React.Component {
                         <MDBCardTitle>Marcel <br/>Wepper</MDBCardTitle>
                         <hr className="hr-light" />
                         <MDBCardText className="white-text">
-                          Frontend Development, Service Administration
+                          Full-Stack-Developer, Service Administration
                         </MDBCardText>
                       </MDBCardBody>
                     </MDBCard>
@@ -195,3 +195,10 @@ export default class Home extends React.Component {
 		);
 	}
 }
+
+const mapStateToProps = function(state) {
+  return{
+  home: state.home
+}
+}
+export default connect()(Home);

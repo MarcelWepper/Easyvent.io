@@ -43,13 +43,13 @@ class NavNotHome extends React.Component {
         <MDBCollapse isOpen={this.state.collapse} navbar>
           <MDBNavbarNav right>
             <MDBNavItem>
-              <MDBNavLink to="/home" >Home</MDBNavLink>
-            </MDBNavItem>
-            <MDBNavItem>
-              <MDBNavLink to="/QR" >QR</MDBNavLink>
+              <MDBNavLink to="/" >Home</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
               <MDBNavLink to="/contact" >Contact</MDBNavLink>
+            </MDBNavItem>
+            <MDBNavItem>
+              <MDBNavLink to="/QR" >QR</MDBNavLink>
             </MDBNavItem>
           </MDBNavbarNav>
         </MDBCollapse>
