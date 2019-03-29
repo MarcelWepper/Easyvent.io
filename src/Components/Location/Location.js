@@ -40,7 +40,7 @@ class Location extends React.Component {
 				 </div>
 			 </MDBContainer>
 		 </LazyHero>
-		 <MDBContainer nogutter style={{ "margin-left": '5%', "margin-right": '5%', "margin-top":"2%" }}className= "HeroText">
+		 <MDBContainer style={{ "padding-left": '5%', "padding-right": '5%', "padding-top":"2%" }}className= "HeroText">
 			 {/* 	Hier die trasnparente Box mit allem	*/}
 			 <div>
 				 <MDBRow>
