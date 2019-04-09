@@ -31,7 +31,7 @@ class Home extends React.Component {
 	render(){
 		return(
       <div className="Home">
-				{/* Hero-Image */}
+				{/* Hero-Image newes Version*/}
         <section id='home'>
 				   <LazyHero color = "#000000" parallaxOffset='50' minHeight='100vh' imageSrc={Hero} >
             <Container className= "grid">
